@@ -1,0 +1,87 @@
+main {
+  width: 100%;
+  height: auto;
+}
+input {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 70px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: #8739f9;
+  border: none;
+  outline: none;
+  color: #ffff;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.angle-calcultaion {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100px 200px 100px;
+}
+
+.deatils {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+}
+.userInput {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  place-items: center;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+}
+
+.calculation-result {
+  width: 100%;
+  height: 250px;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.reslutContainer {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3.5rem;
+  border: 2px solid #8739f9;
+  background: url("https://media.giphy.com/media/5T06ftQWtCMy0XFaaI/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.reslutContainer h1 {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #8739f9;
+}
