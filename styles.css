@@ -12,7 +12,7 @@ html ::-webkit-scrollbar {
 }
 
 body {
-  background: #fff;
+  background: #ffff;
   color: #ffff;
 }
 
@@ -21,7 +21,8 @@ header {
   height: 250px;
   background: #8739f9;
   display: grid;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 70px 1fr;
+  border-bottom: 2px solid #8739f9;
 }
 main {
   width: 100%;
@@ -35,9 +36,10 @@ footer {
   background: #8739f9;
 }
 .container {
-  padding-bottom: 0.8rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
   display: flex;
-  border: 2px solid #8739f9;
+  border-bottom: 2px solid #3333;
 }
 .logo {
   width: 50px;
@@ -49,8 +51,9 @@ footer {
   height: 100%;
 }
 #title {
-  padding-top: 0.8rem;
+  padding-top: 0.7rem;
 }
+
 .headline {
   display: grid;
   place-items: center;
@@ -93,6 +96,7 @@ a {
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
+  padding: 1.2rem;
 }
 
 .list > img {
