@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/hypotenuse.css" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +12,15 @@
   <body>
     <header>
       <div class="container">
-        <a href="./index.html"
+        <a href="../index.html"
           ><div class="logo">
             <img
-              src="https://img.icons8.com/pastel-glyph/256/000000/warning-triangle.png"
+              src="https://img.icons8.com/ios-filled/250/ffffff/left.png"
             /></div
         ></a>
-
-        <h1 id="title">TQuiz</h1>
       </div>
       <div class="headline">
-        <h2>Do you know Triangle ?</h2>
+        <h2>Hypotenuse of the Triangle ?</h2>
       </div>
     </header>
     <svg
@@ -44,38 +44,26 @@
     </svg>
 
     <main>
-      <section class="categories">
-        <div class="categories__title"><h2>Top Categories</h2></div>
-        <div class="categories__list">
-          <a href="./pages/angle.html"
-            ><div class="list">
-              <img src="https://img.icons8.com/nolan/128/angle-snap.png" />
-              Angles of Triangle ?
-            </div></a
-          >
-          <a href="./pages/hypotenuse.html"
-            ><div class="list">
-              <img
-                src="https://img.icons8.com/fluency/240/000000/construction-carpenter-ruler.png"
-              />
-              Check Hypotenuse
-            </div></a
-          >
-          <a href="#"
-            ><div class="list">
-              <img src="https://img.icons8.com/nolan/64/triangle-stroked.png" />
-              Calculate Area
-            </div></a
-          >
-          <a href="#"
-            ><div class="list">
-              <img
-                src="https://img.icons8.com/fluency/48/000000/multiple-choice.png"
-              />
-              Take a Quiz
-            </div></a
-          >
+      <section class="hypotenuse-calculation">
+        <div class="deatils">
+          <p>Enter the length of both sides of right angle triangle</p>
         </div>
+        <div class="triangle">
+          <img src="../img/triangle.svg" alt="triangle" />
+        </div>
+        <div class="sideInput">
+          <input type="number" class="sides" placeholder="a" />
+          <input type="number" class="sides" placeholder="b" />
+        </div>
+        <div class="submit">
+          <button type="button">submit</button>
+        </div>
+      </section>
+      <section class="hypotenuse-result">
+        <div class="show">
+          <h2>Hypotenuse Value :</h2>
+        </div>
+        <div class="value">c = √ a ² + b ²</div>
       </section>
     </main>
 
