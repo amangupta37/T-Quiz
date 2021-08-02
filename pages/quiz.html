@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/quiz.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle Quiz</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="../index.html"
+          ><div class="logo">
+            <img
+              src="https://img.icons8.com/ios-filled/250/ffffff/left.png"
+            /></div
+        ></a>
+      </div>
+      <div class="headline">
+        <h2>Welcome to the Triangle's Quiz (TQuiz)</h2>
+      </div>
+    </header>
+    <svg
+      id="wave"
+      style="transform: rotate(180deg); transition: 0.3s"
+      viewBox="0 0 1440 490"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="#8739f9" offset="0%"></stop>
+          <stop stop-color="#8739f9" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,49L60,73.5C120,98,240,147,360,212.3C480,278,600,359,720,392C840,425,960,408,1080,392C1200,376,1320,359,1440,367.5C1560,376,1680,408,1800,359.3C1920,310,2040,180,2160,155.2C2280,131,2400,212,2520,212.3C2640,212,2760,131,2880,130.7C3000,131,3120,212,3240,204.2C3360,196,3480,98,3600,49C3720,0,3840,0,3960,57.2C4080,114,4200,229,4320,236.8C4440,245,4560,147,4680,114.3C4800,82,4920,114,5040,179.7C5160,245,5280,343,5400,383.8C5520,425,5640,408,5760,343C5880,278,6000,163,6120,171.5C6240,180,6360,310,6480,318.5C6600,327,6720,212,6840,138.8C6960,65,7080,33,7200,73.5C7320,114,7440,229,7560,245C7680,261,7800,180,7920,138.8C8040,98,8160,98,8280,114.3C8400,131,8520,163,8580,179.7L8640,196L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z"
+      ></path>
+    </svg>
+
+    <main id="root">
+      <div class="questionList" id="questionList"></div>
+    </main>
+
+    <footer>
+      <div class="connect">
+        <a href="https://github.com/amangupta37" target="_blank">
+          <div class="social">
+            <img
+              src="https://img.icons8.com/fluency/240/000000/github.png"
+            /></div
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/aman-gupta-649168143/"
+          target="_blank"
+          ><div class="social">
+            <img
+              src="https://img.icons8.com/fluency/240/000000/linkedin.png"
+            /></div
+        ></a>
+        <a href="https://amangupta6121998.medium.com/" target="_blank"
+          ><div class="social">
+            <img
+              src="https://img.icons8.com/ios-filled/250/000000/medium-monogram--v2.gif"
+            /></div
+        ></a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+  <script src="../script/quiz.js"></script>
+</html>
