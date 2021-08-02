@@ -24,13 +24,14 @@ button {
 }
 
 .options__titile {
-  width: 100%;
-  padding: 1rem;
+  width: 95%;
+  margin: 0 auto;
+
   text-align: center;
   color: #8739f9;
 }
 .options__choose {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -44,8 +45,7 @@ label {
 
 input[type="radio"] {
   width: 5%;
-  transform: scale(1.8);
-  background-color: black;
+  transform: scale(1.3);
 }
 
 .showResult {
@@ -56,7 +56,7 @@ input[type="radio"] {
 }
 
 #option-1 {
-  display: block;
+  display: none;
 }
 
 .discription {
@@ -127,4 +127,14 @@ input[type="radio"] {
   text-align: center;
 }
 .displaybox {
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+
+  text-align: center;
+  padding: 0.3rem;
+  padding-top: 2rem;
+  border: 2px dashed #8739f9;
 }
