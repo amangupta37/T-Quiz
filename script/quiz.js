@@ -1,4 +1,48 @@
-const showData = (usersData) => {
+const checkButton = document.getElementById("checkBtn");
+const CorrectBox = document.getElementById("correctAns");
+const IncorrectBox = document.getElementById("incorrectAns");
+const UnansweredBox = document.getElementById("unAns");
+const TotalScoreBox = document.getElementById("totalScore");
+const ResultBox = document.getElementById("resultStats");
+const reset = document.getElementById("retake");
+const showReset = document.getElementById("reset");
+const headerArea = document.getElementById("header");
+const storeUserAnswers = [];
+const displayScore = (correct, Incorrect) => {
+  checkButton.style.display = "none";
+  ResultBox.style.display = "grid";
+  showReset.style.display = "grid";
+
+  let TotalScore = correct;
+  let Unanswered = 10 - (correct + Incorrect);
+
+  CorrectBox.innerHTML = correct;
+  IncorrectBox.innerHTML = Incorrect;
+  UnansweredBox.innerHTML = Unanswered;
+  TotalScoreBox.innerHTML = `${TotalScore} / 10`;
+
+  console.log(correct, Incorrect, Unanswered);
+};
+
+const checkAnswer = () => {
+  let countCorrect = 0;
+  let countWrong = 0;
+
+  storeUserAnswers.map((val) => {
+    console.log(val);
+    if (val.answerSelected === val.correctAnswer) {
+      countCorrect += 1;
+      document.getElementById(val.questionNo).style.background = "lime";
+    } else {
+      document.getElementById(val.questionNo).style.background = "red";
+      countWrong += 1;
+    }
+  });
+
+  displayScore(countCorrect, countWrong);
+};
+
+const showQuestions = (usersData) => {
   const inject = document.getElementById("questionList");
 
   usersData.Questions.map((val) => {
@@ -8,6 +52,7 @@ const showData = (usersData) => {
     const h2 = document.createElement("h2");
 
     mainDiv.setAttribute("class", "question-box");
+    mainDiv.setAttribute("id", val.qno);
     divQuestions.setAttribute("class", "question");
     divOptions.setAttribute("class", "options");
 
@@ -17,19 +62,31 @@ const showData = (usersData) => {
 
     val.option.map((v) => {
       const div = document.createElement("div");
-      div.setAttribute("class", v.id);
       const radiobtn = document.createElement("input");
+      const opt = document.createElement("lable");
+
+      div.setAttribute("class", v.id);
       radiobtn.setAttribute("type", "radio");
       radiobtn.setAttribute("id", v.id);
       radiobtn.setAttribute("name", val.qno);
       radiobtn.setAttribute("class", "radio-button");
-      div.appendChild(radiobtn);
-      const opt = document.createElement("lable");
       opt.setAttribute("for", v.id);
+
       opt.innerHTML = v.optValue;
       opt.innerHTML = v.optValue;
+
+      div.appendChild(radiobtn);
       div.appendChild(opt);
       divOptions.appendChild(div);
+
+      radiobtn.addEventListener("click", () => {
+        const userAnswers = {
+          questionNo: val.qno,
+          answerSelected: v.id,
+          correctAnswer: val.answer,
+        };
+        storeUserAnswers.push(userAnswers);
+      });
     });
 
     mainDiv.appendChild(divOptions);
@@ -42,5 +99,14 @@ fetch("../json/quiz.json")
     return response.json();
   })
   .then((data) => {
-    showData(data);
+    showQuestions(data);
   });
+
+reset.addEventListener("click", () => {
+  headerArea.scrollIntoView();
+  location.reload();
+});
+
+checkButton.addEventListener("click", () => {
+  checkAnswer();
+});
