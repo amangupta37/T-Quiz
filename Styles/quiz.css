@@ -95,7 +95,7 @@ button {
   margin-top: 1rem;
 }
 .correctBox {
-  background: lime;
+  background: #51cf66;
 }
 .IncorrectBox {
   background: red;
