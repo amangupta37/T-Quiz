@@ -1,7 +1,7 @@
 {
   "Questions": [
     {
-      "qno": "1",
+      "qno": "one",
       "question": "1. If a triangle has angles 135°, 15°, 30°. Is it an obtuse triangle?",
       "option": [
         {
@@ -12,24 +12,26 @@
           "id": "optionTwo",
           "optValue": "No"
         }
-      ]
+      ],
+      "answer": "optionOne"
     },
     {
-      "qno": "2",
+      "qno": "two",
       "question": "2. If a triangle has angles 115°, 25°, 40°. Is it an acute triangle?",
       "option": [
         {
-          "id": "optionlet",
+          "id": "optionOne",
           "optValue": "Yes"
         },
         {
-          "id": "optioniu",
+          "id": "optionTwo",
           "optValue": "No"
         }
-      ]
+      ],
+      "answer": "optionTwo"
     },
     {
-      "qno": "3",
+      "qno": "three",
       "question": "3. If a triangle has angles 90°, 60°, 30°. Is it a right angle triangle?",
       "option": [
         {
@@ -40,10 +42,11 @@
           "id": "optionTwo",
           "optValue": "No"
         }
-      ]
+      ],
+      "answer": "optionOne"
     },
     {
-      "qno": "4",
+      "qno": "four",
       "question": "4. A triangle has angles 60°, 60°, 60°. Is it an equilateral triangle?",
       "option": [
         {
@@ -54,10 +57,11 @@
           "id": "optionTwo",
           "optValue": "No"
         }
-      ]
+      ],
+      "answer": "optionOne"
     },
     {
-      "qno": "5",
+      "qno": "five",
       "question": "5. If a triangle has angles 25°, 75°, 80°. Is it an acute triangle?",
       "option": [
         {
@@ -68,11 +72,12 @@
           "id": "optionTwo",
           "optValue": "No"
         }
-      ]
+      ],
+      "answer": "optionOne"
     },
 
     {
-      "qno": "6",
+      "qno": "six",
       "question": "6. If a triangle has 2 sides with equal lengths and 75° angle between them. What is the type of triangle?",
       "option": [
         {
@@ -87,11 +92,12 @@
           "id": "optionTwo",
           "optValue": "Right Angle traingle"
         }
-      ]
+      ],
+      "answer": "optionTwo"
     },
 
     {
-      "qno": "7",
+      "qno": "seven",
       "question": "7. If a triangle has 2 angles of 75°. What is the measure of third angle in degree?",
       "option": [
         {
@@ -106,10 +112,11 @@
           "id": "optionTwo",
           "optValue": "15"
         }
-      ]
+      ],
+      "answer": "optionTwo"
     },
     {
-      "qno": "8",
+      "qno": "eight",
       "question": "8. If a triangle has 2 sides with equal lengths and 60° angle between them. What is the type of triangle?",
       "option": [
         {
@@ -121,13 +128,14 @@
           "optValue": "Isosceles"
         },
         {
-          "id": "optionTwo",
+          "id": "optionThree",
           "optValue": "Both"
         }
-      ]
+      ],
+      "answer": "optionThree"
     },
     {
-      "qno": "9",
+      "qno": "nine",
       "question": "9. The perimeter of an equilateral triangle is 15cm. What is the length of one side?",
       "option": [
         {
@@ -139,13 +147,14 @@
           "optValue": "45cm"
         },
         {
-          "id": "optionTwo",
+          "id": "optionThree",
           "optValue": "5cm"
         }
-      ]
+      ],
+      "answer": "optionThree"
     },
     {
-      "qno": "10",
+      "qno": "ten",
       "question": "10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?",
       "option": [
         {
@@ -157,10 +166,11 @@
           "optValue": "Isosceles"
         },
         {
-          "id": "optionTwo",
+          "id": "optionThree",
           "optValue": " Scalene"
         }
-      ]
+      ],
+      "answer": "optionThree"
     }
   ]
 }
