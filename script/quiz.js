@@ -20,8 +20,6 @@ const displayScore = (correct, Incorrect) => {
   IncorrectBox.innerHTML = Incorrect;
   UnansweredBox.innerHTML = Unanswered;
   TotalScoreBox.innerHTML = `${TotalScore} / 10`;
-
-  console.log(correct, Incorrect, Unanswered);
 };
 
 const checkAnswer = () => {
@@ -29,10 +27,9 @@ const checkAnswer = () => {
   let countWrong = 0;
 
   storeUserAnswers.map((val) => {
-    console.log(val);
     if (val.answerSelected === val.correctAnswer) {
       countCorrect += 1;
-      document.getElementById(val.questionNo).style.background = "lime";
+      document.getElementById(val.questionNo).style.background = "#40c057";
     } else {
       document.getElementById(val.questionNo).style.background = "red";
       countWrong += 1;
