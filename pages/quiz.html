@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container" id="header">
         <a href="../index.html"
           ><div class="logo">
             <img
@@ -44,6 +44,47 @@
 
     <main id="root">
       <div class="questionList" id="questionList"></div>
+      <div class="checkAnswer">
+        <button type="submit" id="checkBtn">submit</button>
+      </div>
+      <div class="showQuizResult" id="resultStats">
+        <div class="result">
+          <h2>Performance Statistics</h2>
+        </div>
+        <div class="resultStats">
+          <div class="showStats">
+            <div class="stats correctStats">
+              <div class="Box correctBox"></div>
+              <div class="statsBox correctData">
+                <p>Correct :</p>
+                <p id="correctAns">0</p>
+              </div>
+            </div>
+            <div class="stats incorrectStats">
+              <div class="Box IncorrectBox"></div>
+              <div class="statsBox IncorrectData">
+                <p>Incorrect :</p>
+                <p id="incorrectAns">0</p>
+              </div>
+            </div>
+            <div class="stats UnansweredStats">
+              <div class="Box UnansweredBox"></div>
+              <div class="statsBox UnansweredData">
+                <p>Unanswered :</p>
+                <p id="unAns">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="showTotalScore">
+            <h3>TotalScore :</h3>
+            <h1 id="totalScore">0 / 10</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="retake" id="reset">
+        <button type="button" id="retake">retake</button>
+      </div>
     </main>
 
     <footer>
