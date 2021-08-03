@@ -2,6 +2,20 @@ main {
   width: 100%;
   height: auto;
 }
+button {
+  display: block;
+  width: 130px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #8739f9;
+  border: none;
+  outline: none;
+  color: #ffff;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
 
 .question-box {
   width: 90%;
@@ -13,7 +27,6 @@ main {
   border-radius: 0.2rem;
   color: #ffffffe6;
   display: grid;
-  /* grid-template-rows: 1fr 40px; */
 }
 
 .question {
@@ -33,4 +46,70 @@ main {
 .radio-button {
   width: 20px;
   transform: scale(1);
+}
+
+.checkAnswer {
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  place-items: center;
+}
+.showQuizResult {
+  width: 95%;
+  height: 240px;
+  margin: 0 auto;
+  display: none;
+  grid-template-rows: 50px 1fr;
+}
+
+.result {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.resultStats {
+  display: grid;
+  grid-template-rows: 130px 1fr;
+}
+
+.showTotalScore {
+  text-align: center;
+}
+.showTotalScore > h3 {
+  padding: 0.5rem;
+}
+
+.stats {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 0.2rem;
+  display: flex;
+  gap: 1rem;
+}
+.Box {
+  width: 20px;
+  height: 20px;
+  background: red;
+  margin-top: 1rem;
+}
+.correctBox {
+  background: lime;
+}
+.IncorrectBox {
+  background: red;
+}
+.UnansweredBox {
+  background: #8739f9;
+}
+.statsBox {
+  width: 70%;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.retake {
+  width: 100%;
+  display: none;
+  place-items: center;
+  padding-top: 3rem;
 }
