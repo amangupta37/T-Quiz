@@ -90,3 +90,26 @@ button {
   padding-top: 1.5rem;
   border: 2px dashed #8739f9;
 }
+/* Desktop Resposniveness */
+@media only screen and (min-width: 1000px) {
+  .hypotenuse-calculation {
+    width: 30%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 0;
+    right: 10%;
+    grid-template-rows: 120px 1fr 100px 80px;
+  }
+  .deatils {
+    font-size: 1.8em;
+  }
+
+  .hypotenuse-result {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15rem;
+    padding-right: 8rem;
+  }
+}
