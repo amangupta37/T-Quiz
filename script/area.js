@@ -43,11 +43,13 @@ const ResultThree = document.getElementById("optionThreeResult");
 
 //operation3
 const calculateAreaThree = (baseVal, angleVal, hypotenouseVal) => {
-  // console.log(baseVal, angleVal, hypotenouseVal);
   const base = parseInt(baseVal);
   const angle = parseInt(angleVal);
   const hypt = parseInt(hypotenouseVal);
-  const area = parseFloat((1 / 2) * base * Math.sin(angle) * hypt);
+
+  const AngleInDegree = Math.sin((angle * Math.PI) / 180);
+
+  const area = base * hypt * (AngleInDegree / 2);
   ResultThree.innerHTML = `Area = ${area}`;
 };
 
@@ -57,11 +59,21 @@ const calculateAreaTwo = (sideOne, sideTwo, sideThree) => {
   const side2 = parseInt(sideTwo);
   const side3 = parseInt(sideThree);
 
-  const s = (side1 + side2 + side3) / 2;
+  const checkSide1 = side1 + side2;
+  const checkSide2 = side1 + side3;
+  const checkSide3 = side2 + side3;
 
-  const area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+  if (checkSide1 > side3 && checkSide2 > side2 && checkSide3 > side1) {
+    const s = (side1 + side2 + side3) / 2;
 
-  ResultTwo.innerHTML = `Area = ${area}`;
+    const area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
+    ResultTwo.innerHTML = `Area = ${area}`;
+  } else {
+    alert(
+      "Invalid Side  ❗❗❗ Sum of two side must be greater than third side "
+    );
+  }
 };
 
 //operation1
@@ -73,6 +85,7 @@ const calculateAreaOne = (base, height) => {
   ResultOne.innerHTML = `Area = ${area}`;
 };
 
+//select operations
 const showOperation = (operationName) => {
   const str = ["option-1", "option-2", "option-3"];
   str.map((val) => {
@@ -96,20 +109,34 @@ option3.addEventListener("click", () => {
 
 //submit button 3 operation
 optionThreeSubmitBtn.addEventListener("click", () => {
-  calculateAreaThree(
-    holdUserInputSideBase,
-    holdUserInputAngle,
-    holdUserInputHyptns
-  );
+  if (
+    holdUserInputSideBase > 0 &&
+    holdUserInputAngle > 0 &&
+    holdUserInputHyptns > 0
+  )
+    calculateAreaThree(
+      holdUserInputSideBase,
+      holdUserInputAngle,
+      holdUserInputHyptns
+    );
+  else alert("Invalid Input");
 });
 
 //submit button 2 operation
 optionTwoSubmitBtn.addEventListener("click", () => {
-  calculateAreaTwo(
-    holdUserInputSideOne,
-    holdUserInputSideTwo,
-    holdUserInputSideThree
-  );
+  if (
+    holdUserInputSideOne > 0 &&
+    holdUserInputSideTwo > 0 &&
+    holdUserInputSideThree > 0
+  ) {
+    calculateAreaTwo(
+      holdUserInputSideOne,
+      holdUserInputSideTwo,
+      holdUserInputSideThree
+    );
+  } else {
+    alert("Invalid Input");
+  }
 });
 
 //submit button 1 operation
