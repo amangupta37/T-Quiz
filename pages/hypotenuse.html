@@ -52,18 +52,18 @@
           <img src="../img/triangle.svg" alt="triangle" />
         </div>
         <div class="sideInput">
-          <input type="number" class="sides" placeholder="a" />
-          <input type="number" class="sides" placeholder="b" />
+          <input type="number" class="sides" placeholder="a" id="height" />
+          <input type="number" class="sides" placeholder="b" id="base" />
         </div>
         <div class="submit">
-          <button type="button">submit</button>
+          <button type="button" id="btn">submit</button>
         </div>
       </section>
       <section class="hypotenuse-result">
         <div class="show">
           <h2>Hypotenuse Value :</h2>
         </div>
-        <div class="value">c = √ a ² + b ²</div>
+        <div class="value" id="result">c = √ a ² + b ²</div>
       </section>
     </main>
 
@@ -92,4 +92,5 @@
       </div>
     </footer>
   </body>
+  <script src="../script/hypt.js"></script>
 </html>
