@@ -9,6 +9,7 @@ const showReset = document.getElementById("reset");
 const headerArea = document.getElementById("header");
 const Preloader = document.getElementById("preloader");
 const questionList = document.getElementById("questionList");
+const BtnBox = document.getElementById("btnBox");
 const storeUserAnswers = [];
 const displayScore = (correct, Incorrect) => {
   checkButton.style.display = "none";
@@ -95,6 +96,7 @@ const showQuestions = (usersData) => {
   const load = () => {
     Preloader.style.display = "none";
     questionList.style.display = "block";
+    BtnBox.style.display = "grid";
   };
 
   setTimeout(load, 1000);
