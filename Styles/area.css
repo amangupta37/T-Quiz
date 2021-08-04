@@ -136,3 +136,49 @@ input[type="radio"] {
   padding-top: 2rem;
   border: 2px dashed #8739f9;
 }
+
+/* Desktop Resposniveness */
+@media only screen and (min-width: 1000px) {
+  main {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .options {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55%;
+    left: 0;
+    right: 10%;
+    grid-template-rows: 160px 1fr;
+    /* background: red; */
+  }
+
+  .options__titile {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #8739f9;
+    padding-top: 1rem;
+  }
+  label {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .showResult {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-right: 10rem;
+  }
+  .userInput {
+    width: 30%;
+  }
+  .calresult {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
