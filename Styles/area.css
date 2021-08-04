@@ -154,7 +154,6 @@ input[type="radio"] {
     left: 0;
     right: 10%;
     grid-template-rows: 160px 1fr;
-    /* background: red; */
   }
 
   .options__titile {
