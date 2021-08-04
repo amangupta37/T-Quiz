@@ -76,7 +76,7 @@ button {
 }
 .show {
   padding: 1rem;
-  /* background: red; */
+
   text-align: center;
 }
 
@@ -84,11 +84,9 @@ button {
   width: 80%;
   height: 100px;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   border: 2px dashed #8739f9;
-
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
