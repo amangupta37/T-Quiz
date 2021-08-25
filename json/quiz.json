@@ -6,11 +6,11 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Yes"
+          "optValue": " Yes"
         },
         {
           "id": "optionTwo",
-          "optValue": "No"
+          "optValue": " No"
         }
       ],
       "answer": "optionOne"
@@ -21,11 +21,11 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Yes"
+          "optValue": " Yes"
         },
         {
           "id": "optionTwo",
-          "optValue": "No"
+          "optValue": " No"
         }
       ],
       "answer": "optionTwo"
@@ -36,11 +36,11 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Yes"
+          "optValue": " Yes"
         },
         {
           "id": "optionTwo",
-          "optValue": "No"
+          "optValue": " No"
         }
       ],
       "answer": "optionOne"
@@ -51,11 +51,11 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Yes"
+          "optValue": " Yes"
         },
         {
           "id": "optionTwo",
-          "optValue": "No"
+          "optValue": " No"
         }
       ],
       "answer": "optionOne"
@@ -66,11 +66,11 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Yes"
+          "optValue": " Yes"
         },
         {
           "id": "optionTwo",
-          "optValue": "No"
+          "optValue": " No"
         }
       ],
       "answer": "optionOne"
@@ -82,7 +82,7 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Equilateral"
+          "optValue": " Equilateral"
         },
         {
           "id": "optionTwo",
@@ -90,7 +90,7 @@
         },
         {
           "id": "optionTwo",
-          "optValue": "Right Angle traingle"
+          "optValue": " Right Angle traingle"
         }
       ],
       "answer": "optionTwo"
@@ -102,15 +102,15 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "25"
+          "optValue": " 25"
         },
         {
           "id": "optionTwo",
-          "optValue": "30"
+          "optValue": " 30"
         },
         {
           "id": "optionTwo",
-          "optValue": "15"
+          "optValue": " 15"
         }
       ],
       "answer": "optionTwo"
@@ -121,15 +121,15 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Equilateral"
+          "optValue": " Equilateral"
         },
         {
           "id": "optionTwo",
-          "optValue": "Isosceles"
+          "optValue": " Isosceles"
         },
         {
           "id": "optionThree",
-          "optValue": "Both"
+          "optValue": " Both"
         }
       ],
       "answer": "optionThree"
@@ -140,15 +140,15 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "15cm"
+          "optValue": " 15cm"
         },
         {
           "id": "optionTwo",
-          "optValue": "45cm"
+          "optValue": " 45cm"
         },
         {
           "id": "optionThree",
-          "optValue": "5cm"
+          "optValue": " 5cm"
         }
       ],
       "answer": "optionThree"
@@ -159,11 +159,11 @@
       "option": [
         {
           "id": "optionOne",
-          "optValue": "Equilateral"
+          "optValue": " Equilateral"
         },
         {
           "id": "optionTwo",
-          "optValue": "Isosceles"
+          "optValue": " Isosceles"
         },
         {
           "id": "optionThree",
