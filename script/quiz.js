@@ -62,8 +62,8 @@ const showQuestions = (usersData) => {
 
     val.option.map((v) => {
       const div = document.createElement("div");
-      const radiobtn = document.createElement("input");
       const opt = document.createElement("lable");
+      const radiobtn = document.createElement("input");
 
       div.setAttribute("class", v.id);
       radiobtn.setAttribute("type", "radio");
@@ -72,7 +72,6 @@ const showQuestions = (usersData) => {
       radiobtn.setAttribute("class", "radio-button");
       opt.setAttribute("for", v.id);
 
-      opt.innerHTML = v.optValue;
       opt.innerHTML = v.optValue;
 
       div.appendChild(radiobtn);
