@@ -209,4 +209,10 @@ button {
     font-size: 1.2rem;
     color: #535252;
   }
+
+  .connect {
+    width: 25%;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
