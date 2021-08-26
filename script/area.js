@@ -141,7 +141,11 @@ optionTwoSubmitBtn.addEventListener("click", () => {
 
 //submit button 1 operation
 optionOneSubmitBtn.addEventListener("click", () => {
-  calculateAreaOne(holdUserInputBase, holdUserInputHeight);
+  if (holdUserInputBase > 0 && hholdUserInputHeight > 0) {
+    calculateAreaOne(holdUserInputBase, holdUserInputHeight);
+  } else {
+    alert("Invalid Input");
+  }
 });
 
 //user sidebase , angle , hyptns
