@@ -32,7 +32,7 @@ const checkAnswer = () => {
   storeUserAnswers.map((val) => {
     if (val.answerSelected === val.correctAnswer) {
       countCorrect += 1;
-      document.getElementById(val.questionNo).style.background = "lime";
+      document.getElementById(val.questionNo).style.background = "#2f9e44";
     } else {
       document.getElementById(val.questionNo).style.background = "red";
       countWrong += 1;
