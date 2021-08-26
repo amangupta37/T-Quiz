@@ -96,6 +96,7 @@ const showQuestions = (usersData) => {
     Preloader.style.display = "none";
     questionList.style.display = "block";
     BtnBox.style.display = "grid";
+    headerArea.scrollIntoView();
   };
 
   setTimeout(load, 1000);
@@ -110,7 +111,6 @@ fetch("../json/quiz.json")
   });
 
 reset.addEventListener("click", () => {
-  headerArea.scrollIntoView();
   location.reload();
 });
 
