@@ -141,7 +141,7 @@ optionTwoSubmitBtn.addEventListener("click", () => {
 
 //submit button 1 operation
 optionOneSubmitBtn.addEventListener("click", () => {
-  if (holdUserInputBase > 0 && hholdUserInputHeight > 0) {
+  if (holdUserInputBase > 0 && holdUserInputHeight > 0) {
     calculateAreaOne(holdUserInputBase, holdUserInputHeight);
   } else {
     alert("Invalid Input");
