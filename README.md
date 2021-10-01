@@ -1,2 +1,2 @@
 # T-Quiz
-Quiz Application Built using Vanilla JS
+Quiz Application Built using JS
